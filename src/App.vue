@@ -1,11 +1,13 @@
 <script setup>
 import { RouterView } from "vue-router";
+import AppHeader from "./components/AppHeader.vue";
+import AppFooter from "./components/AppFooter.vue";
 </script>
 
 <template>
-  <header class="flex-grow-0 flex-shrink-0">Header</header>
+  <AppHeader class="flex-grow-0 flex-shrink-0" />
   <main class="flex-grow">
     <RouterView />
   </main>
-  <footer class="flex-grow-0 flex-shrink-0">Footer</footer>
+  <AppFooter class="flex-grow-0 flex-shrink-0" />
 </template>
