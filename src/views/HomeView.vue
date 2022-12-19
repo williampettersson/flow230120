@@ -8,6 +8,8 @@ import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
 <template>
   <AppHeader class="flex-grow-0 flex-shrink-0" />
   <main class="flex-grow space-y-8 mt-8">
+    <h1 class="underline text-center text-4xl font-bold">Vi är TE4!</h1>
+
     <AppSection>
       <p>
         Vi studerar vid Östra Gymnasiet och läser just nu utbildningen TE4.
