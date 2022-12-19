@@ -23,12 +23,12 @@ export default {
     <nav class="flex justify-between items-center text-xl font-bold">
       <slot><RouterLink to="/">TE4</RouterLink></slot>
       <div
-        class="space-x-8 flex-col right-4 top-8 items-end absolute md:flex-row md:static"
+        class="space-x-8 flex-col right-3 top-9 items-end absolute md:flex-row md:static p-1 bg-neutral-900 rounded-lg shadow"
         :class="sidebarOpen ? 'flex' : 'hidden md:flex'"
       >
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/wood-ridge">Wood-Ridge</RouterLink>
-        <RouterLink to="/sp-aice">SP-AICE</RouterLink>
+        <RouterLink class="p-1" to="/">Home</RouterLink>
+        <RouterLink class="p-1" to="/wood-ridge">Wood-Ridge</RouterLink>
+        <RouterLink class="p-1" to="/sp-aice">SP-AICE</RouterLink>
       </div>
       <button class="w-8 h-8 md:hidden" @click="toggleSidebar">
         <Bars3Icon />

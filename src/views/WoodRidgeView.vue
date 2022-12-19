@@ -17,7 +17,7 @@ import AppSectionTitle from "../components/AppSectionTitle.vue";
     <section class="w-fit space-y-4 mx-auto">
       <AppSectionTitle name="Team" />
       <div
-        class="grid grid-flow-row gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+        class="grid grid-flow-row gap-2 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
       >
         <MemberCard
           name="Enok E"
@@ -48,7 +48,7 @@ import AppSectionTitle from "../components/AppSectionTitle.vue";
       </div>
     </section>
     <section
-      class="space-y-4 mx-auto w-[380px] md:w-[776px] xl:w-[1172px] 2xl:w-[1568px]"
+      class="space-y-4 mx-auto w-[380px] md:w-[768px] xl:w-[1156px] 2xl:w-[1544px] max-w-full"
     >
       <h1 class="text-center font-bold underline text-4xl">Projekt</h1>
       <div>
