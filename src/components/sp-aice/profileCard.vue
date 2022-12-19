@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div class="h-[28rem] w-[360px] mx-auto">
+  <div class="h-[28rem] w-[360px] mx-auto m-8">
     <div
       class="w-[100%] h-[100%] rounded-xl border-2 border-white"
       @click="flipCard"
@@ -33,12 +33,14 @@ export default {
         <div class="cardface rounded-xl">
           <img class="absolute" :src="`${imageName}`" :alt="`${imageAlt}`" />
         </div>
-        <div class="cardface cardfaceBack bg-white h-full rounded-xl">
+        <div
+          class="cardface cardfaceBack bg-white h-full rounded-xl text-black p-4"
+        >
           <p>{{ summary }}</p>
         </div>
       </div>
 
-      <div class="text-white">
+      <div class="text-white p-4">
         <p class="text-3xl font-semibold">{{ memberName }}</p>
         <p>{{ description }}</p>
       </div>
