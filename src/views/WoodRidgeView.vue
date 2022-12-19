@@ -17,7 +17,7 @@ import AppSectionTitle from "../components/AppSectionTitle.vue";
     <section class="w-fit space-y-4 mx-auto">
       <AppSectionTitle name="Team" />
       <div
-        class="grid grid-flow-row gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+        class="grid grid-flow-row gap-4 sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-4"
       >
         <MemberCard
           name="Enok E"

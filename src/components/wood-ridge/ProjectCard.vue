@@ -23,7 +23,7 @@ export default {
       </p>
     </div>
     <div
-      class="h-[410px] items-center sm:flex overflow-auto space-y-4 sm:space-y-0 sm:space-x-4"
+      class="h-[410px] items-center sm:flex overflow-auto space-y-4 sm:space-y-0 sm:space-x-4 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-600"
     >
       <img v-for="image in images" :src="image" :key="image" class="mx-auto" />
     </div>
