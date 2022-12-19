@@ -15,33 +15,30 @@ export default {
     description: String,
     imageName: String,
     imageAlt: String,
+    summary: String,
   },
 };
 </script>
 
 <template>
-  <div class="h-[28rem] w-[360px] mx-auto text-white">
+  <div class="h-[28rem] w-[360px] mx-auto">
     <div
-      class="w-[100%] h-[100%] relative mt-20 mx-auto rounded-xl border-2 border-white"
+      class="w-[100%] h-[100%] rounded-xl border-2 border-white"
       @click="flipCard"
     >
       <div
-        class="innerCard cursor-pointer transition transform duration-1000"
+        class="innerCard cursor-pointer transition transform duration-1000 w-[300px] h-[300px] -mt-8 mx-auto"
         :class="toggled ? 'isFlipped' : ''"
       >
-        <div class="cardface bg-red-700 rounded-xl">
-          <img
-            class="-mt-8 absolute"
-            :src="`${imageName}`"
-            :alt="`${imageAlt}`"
-          />
+        <div class="cardface rounded-xl">
+          <img class="absolute" :src="`${imageName}`" :alt="`${imageAlt}`" />
         </div>
-        <div class="cardface cardfaceBack">
-          <p>snopp</p>
+        <div class="cardface cardfaceBack bg-white h-full rounded-xl">
+          <p>{{ summary }}</p>
         </div>
       </div>
 
-      <div>
+      <div class="text-white">
         <p class="text-3xl font-semibold">{{ memberName }}</p>
         <p>{{ description }}</p>
       </div>
@@ -59,15 +56,11 @@ export default {
 }
 
 .cardface {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 .cardfaceBack {
-  background-color: blue;
   transform: rotateY(180deg);
 }
 </style>
