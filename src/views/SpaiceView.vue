@@ -2,6 +2,7 @@
 import AppHeader from "../components/AppHeader.vue";
 import AppSectionTitle from "../components/AppSectionTitle.vue";
 import profileCard from "../components/sp-aice/profileCard.vue";
+import axelPicture from "../assets/axel.svg";
 import { RouterLink } from "vue-router";
 </script>
 
@@ -12,7 +13,12 @@ import { RouterLink } from "vue-router";
   <main class="flex-grow">
     <AppSectionTitle name="Team" />
     <div class="grid grid-cols-2 w-[50%] mx-auto">
-      <profileCard />
+      <profileCard
+        memberName="Axel"
+        description="HEHHEHE"
+        :imageName="`${axelPicture}`"
+        imageAlt="Picture of member Axel"
+      />
       <profileCard />
       <profileCard />
       <profileCard />

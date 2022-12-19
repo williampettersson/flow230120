@@ -10,18 +10,41 @@ export default {
       this.toggled = !this.toggled;
     },
   },
-  props: {},
+  props: {
+    memberName: String,
+    description: String,
+    imageName: String,
+    imageAlt: String,
+  },
 };
 </script>
 
 <template>
-  <div class="w-[300px] h-[300px] mx-auto" @click="flipCard">
+  <div class="h-[28rem] w-[360px] mx-auto text-white">
     <div
-      class="innerCard cursor-pointer w-[100%] h-[100%] transition transform duration-1000 relative"
-      :class="toggled ? 'isFlipped' : ''"
+      class="w-[100%] h-[100%] relative mt-20 mx-auto rounded-xl border-2 border-white"
+      @click="flipCard"
     >
-      <div class="cardface bg-red-700">Axel</div>
-      <div class="cardface cardfaceBack">Inte Axel</div>
+      <div
+        class="innerCard cursor-pointer transition transform duration-1000"
+        :class="toggled ? 'isFlipped' : ''"
+      >
+        <div class="cardface bg-red-700 rounded-xl">
+          <img
+            class="-mt-8 absolute"
+            :src="`${imageName}`"
+            :alt="`${imageAlt}`"
+          />
+        </div>
+        <div class="cardface cardfaceBack">
+          <p>snopp</p>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-3xl font-semibold">{{ memberName }}</p>
+        <p>{{ description }}</p>
+      </div>
     </div>
   </div>
 </template>
