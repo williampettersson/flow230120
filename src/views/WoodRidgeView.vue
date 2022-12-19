@@ -5,6 +5,9 @@ import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
 import MemberCard from "../components/wood-ridge/MemberCard.vue";
 import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
 import AppSectionTitle from "../components/AppSectionTitle.vue";
+import willePicture from "../assets/wille.svg";
+import hampusPicture from "../assets/hampus.svg";
+import enokPicture from "../assets/enok.svg";
 </script>
 
 <template>
@@ -24,31 +27,31 @@ import AppSectionTitle from "../components/AppSectionTitle.vue";
           description="Average M.I.A Guy.
       En commit om dagen är bra för magen!"
           githubLink="https://github.com/Enokek"
-          imageName="enok.png"
+          :imageName="`${enokPicture}`"
         />
         <MemberCard
           name="Hampus W"
           description="Historia, träning och tv-spel. Vue3 och Tailwind förgyller livet!"
           githubLink="https://github.com/Hamwa03"
-          imageName="hampus.png"
+          :imageName="`${hampusPicture}`"
         />
         <MemberCard
           name="Lucas S"
           description="Average Java Enjoyer
       Älskar att programmera och spela datorspel."
           githubLink="https://github.com/Olivoz/"
-          imageName="lucas.png"
+          :imageName="`${lucasPicture}`"
         />
         <MemberCard
           name="William P"
           description="Tycker om att hänga i skidbacken. Har även blivit ett stort fan av Vue3 & Tailwind CSS"
           githubLink="https://github.com/williampettersson"
-          imageName="william.png"
+          :imageName="`${willePicture}`"
         />
       </div>
     </section>
     <section
-      class="space-y-4 mx-auto w-[380px] md:w-[776px] xl:w-[1172px] 2xl:w-[1568px]"
+      class="space-y-4 mx-auto w-[380px] md:w-[768px] xl:w-[1156px] 2xl:w-[1544px] max-w-full"
     >
       <h1 class="text-center font-bold underline text-4xl">Projekt</h1>
       <div>
