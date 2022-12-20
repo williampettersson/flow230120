@@ -20,15 +20,15 @@ export default {
 
 <template>
   <header>
-    <nav class="flex justify-between items-center text-xl font-bold">
+    <nav class="flex justify-between items-center text-xl font-strong">
       <slot><RouterLink to="/">TE4</RouterLink></slot>
       <div
-        class="space-x-8 flex-col right-3 top-9 items-end absolute md:flex-row md:static p-1 bg-neutral-900 rounded-lg shadow"
+        class="space-x-8 flex-col right-3 top-9 items-end absolute md:flex-row md:static p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow"
         :class="sidebarOpen ? 'flex' : 'hidden md:flex'"
       >
-        <RouterLink class="p-1" to="/">Home</RouterLink>
-        <RouterLink class="p-1" to="/wood-ridge">Wood-Ridge</RouterLink>
-        <RouterLink class="p-1" to="/sp-aice">SP-AICE</RouterLink>
+        <RouterLink class="p-1 hover:bg-neutral-800 w-full rounded-lg shadow" to="/">Home</RouterLink>
+        <RouterLink class="p-1 hover:bg-neutral-800 w-full rounded-lg shadow" to="/wood-ridge">Wood-Ridge</RouterLink>
+        <RouterLink class="p-1 hover:bg-neutral-800 w-full rounded-lg shadow" to="/sp-aice">SP-AICE</RouterLink>
       </div>
       <button class="w-8 h-8 md:hidden" @click="toggleSidebar">
         <Bars3Icon />
