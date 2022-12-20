@@ -47,8 +47,8 @@ export default {
       </div>
 
       <div class="text-white p-4">
-        <p class="text-3xl font-semibold">{{ memberName }}</p>
-        <p>{{ description }}</p>
+        <p class="text-3xl font-semibold text-center">{{ memberName }}</p>
+        <p class="text-center">{{ description }}</p>
         <a
           :href="githubLink"
           class="flex bg-white rounded-lg text-black font-bold w-fit py-1 px-2 mt-3"
