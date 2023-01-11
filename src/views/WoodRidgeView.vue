@@ -11,7 +11,7 @@ import AppSectionTitle from "../components/AppSectionTitle.vue";
   <AppHeader class="flex-grow-0 flex-shrink-0"
     ><RouterLink
       to="/wood-ridge"
-      class="flex items-center p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
+      class="flex items-center p-2 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
       ><WoodRidgeIcon class="mr-2" />Wood-Ridge</RouterLink
     ></AppHeader
   >

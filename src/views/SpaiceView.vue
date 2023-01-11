@@ -2,10 +2,6 @@
 import AppHeader from "../components/AppHeader.vue";
 import AppSectionTitle from "../components/AppSectionTitle.vue";
 import profileCard from "../components/sp-aice/profileCard.vue";
-import axelPicture from "../assets/axel.svg";
-import isacPicture from "../assets/isac.svg";
-import elliotPicture from "../assets/elliot.svg";
-import casperPicture from "../assets/casper.svg";
 import { RouterLink } from "vue-router";
 import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
 </script>
@@ -14,7 +10,7 @@ import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
   <AppHeader class="flex-grow-0 flex-shrink-0"
     ><RouterLink
       to="/sp-aice"
-      class="p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
+      class="p-2 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
       >SP-AICE</RouterLink
     ></AppHeader
   >
