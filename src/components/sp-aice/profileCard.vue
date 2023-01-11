@@ -35,8 +35,8 @@ export default {
         class="innerCard cursor-pointer transition transform duration-1000 w-[300px] h-[300px] -mt-8 mx-auto" @click="flipCard"
         :class="toggled ? 'isFlipped' : ''"
       >
-        <div class="cardface rounded-xl">
-          <img class="absolute" :src="`${imageName}`" :alt="`${imageAlt}`" />
+        <div class="cardface">
+          <img class="absolute rounded-xl" :src="imageName" :alt="`${imageAlt}`" />
         </div>
         <div
           class="cardface cardfaceBack bg-white h-full rounded-xl text-black p-4 text-center"
