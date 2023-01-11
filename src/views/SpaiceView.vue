@@ -12,9 +12,14 @@ import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
 
 <template>
   <AppHeader class="flex-grow-0 flex-shrink-0"
-    ><RouterLink to="/sp-aice">SP-AICE</RouterLink></AppHeader
+    ><RouterLink
+      to="/sp-aice"
+      class="p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
+      >SP-AICE</RouterLink
+    ></AppHeader
   >
   <main>
+  <main class="flex-grow">
     <AppSectionTitle name="Team" />
     <div
       class="grid grid-flow-row md:grid-cols-2 2xl:grid-cols-4 mx-auto gap-12"

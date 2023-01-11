@@ -5,14 +5,13 @@ import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
 import MemberCard from "../components/wood-ridge/MemberCard.vue";
 import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
 import AppSectionTitle from "../components/AppSectionTitle.vue";
-import willePicture from "../assets/wille.svg";
-import hampusPicture from "../assets/hampus.svg";
-import enokPicture from "../assets/enok.svg";
 </script>
 
 <template>
   <AppHeader class="flex-grow-0 flex-shrink-0"
-    ><RouterLink to="/wood-ridge" class="flex items-center"
+    ><RouterLink
+      to="/wood-ridge"
+      class="flex items-center p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
       ><WoodRidgeIcon class="mr-2" />Wood-Ridge</RouterLink
     ></AppHeader
   >
@@ -27,26 +26,26 @@ import enokPicture from "../assets/enok.svg";
           description="Average M.I.A Guy.
       En commit om dagen är bra för magen!"
           githubLink="https://github.com/Enokek"
-          :imageName="`${enokPicture}`"
+          imageName="members/enok.jpg"
         />
         <MemberCard
           name="Hampus W"
           description="Historia, träning och tv-spel. Vue3 och Tailwind förgyller livet!"
           githubLink="https://github.com/Hamwa03"
-          :imageName="`${hampusPicture}`"
+          imageName="members/hampus.jpg"
         />
         <MemberCard
           name="Lucas S"
           description="Average Java Enjoyer
       Älskar att programmera och spela datorspel."
           githubLink="https://github.com/Olivoz/"
-          :imageName="`${lucasPicture}`"
+          imageName="members/lucas.jpg"
         />
         <MemberCard
           name="William P"
           description="Tycker om att hänga i skidbacken. Har även blivit ett stort fan av Vue3 & Tailwind CSS"
           githubLink="https://github.com/williampettersson"
-          :imageName="`${willePicture}`"
+          imageName="members/william.jpg"
         />
       </div>
     </section>
