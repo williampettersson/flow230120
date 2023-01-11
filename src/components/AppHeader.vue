@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header class="z-10">
     <nav class="flex justify-between items-center text-xl font-strong">
       <slot
         ><RouterLink
