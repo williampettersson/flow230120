@@ -7,6 +7,7 @@ import isacPicture from "../assets/isac.svg";
 import elliotPicture from "../assets/elliot.svg";
 import casperPicture from "../assets/casper.svg";
 import { RouterLink } from "vue-router";
+import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
 </script>
 
 <template>
@@ -25,14 +26,14 @@ import { RouterLink } from "vue-router";
       <profileCard
         memberName="Axel"
         description="Musik är något Axel tycker förgyller livet. Dela gärna med dig vilken musik du gillar och om du själv spelar något instrument."
-        :imageName="`${axelPicture}`"
+        imageName="members/Axel2.jpg"
         imageAlt="Picture of member Axel"
         githubLink="https://github.com/axelhagerback"
       />
       <profileCard
         memberName="Isac"
         description="Om du börjar prata  träning med Isac kommer du inte bli av med honom på ett tag"
-        :imageName="`${isacPicture}`"
+        imageName="members/Isac1.jpg"
         imageAlt="Picture of member Isac"
         summary="Hej hej jag heter Isac"
         githubLink="https://github.com/isacchr"
@@ -40,17 +41,30 @@ import { RouterLink } from "vue-router";
       <profileCard
         memberName="Casper"
         description="Casper är norsk, han är dansk, han är lite allt möjligt. Precis som hans intressen och ämnen att diskutera."
-        :imageName="`${casperPicture}`"
+        imageName="members/Casper2.jpg"
         imageAlt="Picture of member Casper"
         githubLink="https://github.com/CasperHogstrom"
       />
       <profileCard
         memberName="Elliot"
-        description="En bra arbetsplats kan variera för Elliot, antingen ett kontor eller vid hans hund Milo."
-        :imageName="`${elliotPicture}`"
+        description="En bra arbetsplats kan variera för Elliot, antingen kontor eller vid hans hund Milo."
+        imageName="members/Elliot2.jpg"
         imageAlt="Picture of member Elliot"
         githubLink="https://github.com/elliotabrahamsson"
       />
     </div>
+
+    <section
+      class="space-y-4 mx-auto w-[150px] md:w-[450px] xl:w-[750px] 2xl:w-[1000px] max-w-full"
+    >
+      <h1 class="text-center font-bold text-4xl">Projekt</h1>
+      <ProjectCard
+        class="text-center"
+        name="Mind Dump"
+        description="Mind Dump är en webbapplikation
+    som man kan skapa anteckningar för sina behov. Den erbjuder funktioner som att
+    ta bort och redigera nuvarande anteckningar."
+      />
+    </section>
   </main>
 </template>
