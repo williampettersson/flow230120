@@ -29,24 +29,48 @@ import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
       </AppSection>
       <AppSection name="Kompetens" class="mt-8 sm:mt-0">
         <p>
-          Kort om vår kompetens på TE4, vi kan jobba självständigt om vi får ett
-          tydligt mål att jobba mot, jobba agilt, vi på TE4 är T-shaped,
-          (specialisering kommer naturligt). <br /><br />Tekniker vi använder:
+          Vi på TE4 är specialiserade inom JavaScript ES6 och duktiga inom HTML5
+          och CSS3. Utöver de språken använder vi ramverket Vue 3 för att
+          underlätta arbetsprocessen och förbättra kodstrukturen. Vanliga
+          verktyg vi använder är Node.js, Visual Studio Code, Git och Github.
+          Utbildningen har dessutom förbättrat vår förmåga att anpassa oss till
+          kunder. Vi uppskattar att involvera kunder i vår produktutveckling och
+          kommunicera för att nå bättre resultat kring slutprodukten.
+          <br /><br />Tekniker vi använder:
         </p>
         <ul class="ml-4 text-white list-disc">
-          <li>HTML, CSS, JS</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript ES6</li>
           <li>Vue 3</li>
-          <li>Pinia</li>
           <li>Tailwind CSS</li>
+          <li>Pinia</li>
           <li>Axios</li>
+          <li>Node.js</li>
           <li>Express</li>
           <li>Passport.js</li>
-          <li>Bcrypt</li>
           <li>MongoDB</li>
+          <li>Bcrypt</li>
           <li>Git</li>
+          <li>Figma</li>
         </ul>
       </AppSection>
     </div>
+    <AppSection name="Hur vi arbetar">
+      <p>
+        Med tydliga mål och riktlinjer kan vi planera noggrant och sedan arbeta
+        självständigt med ett agilt arbetssätt för att nå målet. När vi sätter
+        upp projekt analyserar vi planeringen för att bestämma optimala tekniker
+        och ramverk i relation till uppgiften. Vi delar sedan upp projektet i
+        mindre bitar och bearbetar arbetsuppgifterna efter dess prioritet. I
+        vårt arbete applicerar vi en metod kallad “Minimal Viable Product”. Det
+        innebär en tidig release med precis nog mängd funktioner för att
+        produkten ska fungera. Syftet är att kunden då kan ge användarfeedback
+        tidigt och validera produktideér för att nå en gemensam förståelse av
+        slutprodukten. Vi publicerar våra ändringar i koden på Github med hjälp
+        av Git, för att varje person ska kunna ta del av de senaste.
+      </p>
+    </AppSection>
     <AppSection name="Våra Team">
       <div class="flex justify-center items-center">
         <RouterLink to="/wood-ridge" class="flex items-center text-2xl"
