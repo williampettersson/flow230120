@@ -4,6 +4,8 @@ import AppHeader from "../components/AppHeader.vue";
 import AppSection from "../components/AppSection.vue";
 import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
 import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
+import { ChevronUpIcon } from "@heroicons/vue/20/solid";
 </script>
 
 <template>
@@ -28,7 +30,7 @@ import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
       </p>
       <ProjectCard
         name="Nobel"
-        description="Nobel applicationen är ett quiz om nobel som byggdes inför Östra Gymnasiets Nobelltävling 2022."
+        description="Nobel applicationen är ett quiz om nobel som byggdes inför Östra Gymnasiets Nobeltävling 2022."
         githubLink="https://github.com/TE42223/Nobel2022"
         :images="[
           'nobel/1.jpg',
@@ -52,24 +54,37 @@ import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
         har dessutom förbättrat vår förmåga att anpassa oss till kunder. Vi
         uppskattar att involvera kunder i vår produktutveckling och kommunicera
         för att nå bättre resultat kring slutprodukten.
-        <br /><br />Tekniker vi använder:
       </p>
-      <ul class="ml-4 text-white list-disc">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript ES6</li>
-        <li>Vue 3</li>
-        <li>Tailwind CSS</li>
-        <li>Pinia</li>
-        <li>Axios</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>Passport.js</li>
-        <li>MongoDB</li>
-        <li>Bcrypt</li>
-        <li>Git</li>
-        <li>Figma</li>
-      </ul>
+
+      <Disclosure v-slot="{ open }">
+        <DisclosureButton
+          class="flex w-full justify-between rounded-lg bg-slate-600 px-4 py-2 text-left text-sm font-medium hover:bg-slate-400"
+        >
+          <span>Tekniker vi använder</span>
+          <ChevronUpIcon
+            :class="open ? 'rotate-180 transform' : ''"
+            class="h-5 w-5"
+          />
+        </DisclosureButton>
+        <DisclosurePanel class="px-4 pt-4 pb-2 text-sm">
+          <ul class="ml-4 text-white list-disc">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript ES6</li>
+            <li>Vue 3</li>
+            <li>Tailwind CSS</li>
+            <li>Pinia</li>
+            <li>Axios</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Passport.js</li>
+            <li>MongoDB</li>
+            <li>Bcrypt</li>
+            <li>Git</li>
+            <li>Figma</li>
+          </ul>
+        </DisclosurePanel>
+      </Disclosure>
     </AppSection>
     <AppSection name="Hur vi arbetar">
       <p>
