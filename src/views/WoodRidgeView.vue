@@ -11,11 +11,11 @@ import AppSectionTitle from "../components/AppSectionTitle.vue";
   <AppHeader class="flex-grow-0 flex-shrink-0"
     ><RouterLink
       to="/wood-ridge"
-      class="flex items-center p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
+      class="flex items-center p-2 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
       ><WoodRidgeIcon class="mr-2" />Wood-Ridge</RouterLink
     ></AppHeader
   >
-  <main class="flex-grow">
+  <main class="flex-grow space-y-4">
     <section class="w-fit space-y-4 mx-auto">
       <AppSectionTitle name="Team" />
       <div
@@ -52,7 +52,7 @@ import AppSectionTitle from "../components/AppSectionTitle.vue";
     <section
       class="space-y-4 mx-auto w-[380px] md:w-[768px] xl:w-[1156px] 2xl:w-[1544px] max-w-full"
     >
-      <h1 class="text-center font-bold underline text-4xl">Projekt</h1>
+      <h1 class="text-center font-bold text-4xl">Projekt</h1>
       <div>
         <ProjectCard
           name="Notes"

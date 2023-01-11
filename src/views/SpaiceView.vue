@@ -10,7 +10,7 @@ import ProjectCards from "../components/sp-aice/ProjectCards.vue";
   <AppHeader class="flex-grow-0 flex-shrink-0"
     ><RouterLink
       to="/sp-aice"
-      class="p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
+      class="p-2 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
       >SP-AICE</RouterLink
     ></AppHeader
   >
