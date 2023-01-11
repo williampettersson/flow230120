@@ -21,13 +21,7 @@ export default {
 <template>
   <header class="z-10">
     <nav class="flex justify-between items-center text-xl font-strong">
-      <slot
-        ><RouterLink
-          to="/"
-          class="flex items-center p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
-          >TE4</RouterLink
-        ></slot
-      >
+      <slot><div /></slot>
       <div
         class="space-x-8 flex-col right-3 top-9 items-end absolute md:flex-row md:items-center md:static p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
         :class="sidebarOpen ? 'flex' : 'hidden md:flex'"
