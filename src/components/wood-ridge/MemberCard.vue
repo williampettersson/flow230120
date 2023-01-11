@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="border-white border-2 rounded-lg w-[380px] p-4">
+  <div class="bg-slate-700 rounded-lg w-[380px] p-4 shadow-xl">
     <p class="text-center font-bold text-xl">{{ name }}</p>
     <div class="flex mt-2">
       <img :src="imageName" class="rounded-lg mr-2 w-[150px] h-[150px]" />
