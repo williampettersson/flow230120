@@ -17,7 +17,7 @@ import { RouterLink } from "vue-router";
       >SP-AICE</RouterLink
     ></AppHeader
   >
-  <main>
+  <main class="flex-grow">
     <AppSectionTitle name="Team" />
     <div
       class="grid grid-flow-row md:grid-cols-2 2xl:grid-cols-4 mx-auto gap-12"
