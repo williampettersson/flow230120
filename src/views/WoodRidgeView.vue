@@ -12,7 +12,9 @@ import enokPicture from "../assets/enok.svg";
 
 <template>
   <AppHeader class="flex-grow-0 flex-shrink-0"
-    ><RouterLink to="/wood-ridge" class="flex items-center"
+    ><RouterLink
+      to="/wood-ridge"
+      class="flex items-center p-1 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
       ><WoodRidgeIcon class="mr-2" />Wood-Ridge</RouterLink
     ></AppHeader
   >
