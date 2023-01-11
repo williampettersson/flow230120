@@ -71,11 +71,19 @@ import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
         av Git, för att varje person ska kunna ta del av de senaste.
       </p>
     </AppSection>
-    <AppSection name="Våra Team">
+    <AppSection name="Teams">
       <div class="flex justify-center items-center">
-        <RouterLink to="/wood-ridge" class="flex items-center text-2xl"
-          ><WoodRidgeIcon class="mr-2" />Wood-Ridge</RouterLink
-        >
+        <div class="bg-slate-500 hover:bg-slate-400 rounded-lg p-2 mx-2 mt-2">
+          <RouterLink to="/wood-ridge" class="flex items-center text-2xl">
+            <WoodRidgeIcon class="mr-2" />Wood-Ridge</RouterLink
+          >
+        </div>
+
+        <div class="bg-slate-500 hover:bg-slate-400 rounded-lg p-2 mx-2 mt-2">
+          <RouterLink to="/sp-aice" class="flex items-center text-2xl">
+            <WoodRidgeIcon class="mr-2" />SP-AICE</RouterLink
+          >
+        </div>
       </div>
     </AppSection>
   </main>
