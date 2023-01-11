@@ -3,6 +3,7 @@ import { RouterLink } from "vue-router";
 import AppHeader from "../components/AppHeader.vue";
 import AppSection from "../components/AppSection.vue";
 import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
+import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
 </script>
 
 <template>
@@ -20,42 +21,56 @@ import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
         SP-AICE, som arbetar enskilt men kan jobba tillsammans.
       </p></AppSection
     >
-    <div class="sm:flex sm:space-x-16">
-      <AppSection name="Gemensamma projekt">
-        <p>
-          Tillsammans har vi i TE4 utvecklat en webbapplikation vid namn: Östra
-          Gymnasiets Nobel quiz.
-        </p>
-      </AppSection>
-      <AppSection name="Kompetens" class="mt-8 sm:mt-0">
-        <p>
-          Vi på TE4 är specialiserade inom JavaScript ES6 och duktiga inom HTML5
-          och CSS3. Utöver de språken använder vi ramverket Vue 3 för att
-          underlätta arbetsprocessen och förbättra kodstrukturen. Vanliga
-          verktyg vi använder är Node.js, Visual Studio Code, Git och Github.
-          Utbildningen har dessutom förbättrat vår förmåga att anpassa oss till
-          kunder. Vi uppskattar att involvera kunder i vår produktutveckling och
-          kommunicera för att nå bättre resultat kring slutprodukten.
-          <br /><br />Tekniker vi använder:
-        </p>
-        <ul class="ml-4 text-white list-disc">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript ES6</li>
-          <li>Vue 3</li>
-          <li>Tailwind CSS</li>
-          <li>Pinia</li>
-          <li>Axios</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>Passport.js</li>
-          <li>MongoDB</li>
-          <li>Bcrypt</li>
-          <li>Git</li>
-          <li>Figma</li>
-        </ul>
-      </AppSection>
-    </div>
+    <AppSection name="Gemensamma projekt">
+      <p>
+        Tillsammans har vi i TE4 utvecklat en webbapplikation vid namn: Östra
+        Gymnasiets Nobel quiz.
+      </p>
+      <ProjectCard
+        name="Nobel"
+        description="Nobel applicationen är ett quiz om nobel som byggdes inför Östra Gymnasiets Nobelltävling 2022."
+        githubLink="https://github.com/TE42223/Nobel2022"
+        :images="[
+          'nobel/1.jpg',
+          'nobel/2.jpg',
+          'nobel/3.jpg',
+          'nobel/4.jpg',
+          'nobel/5.jpg',
+          'nobel/6.jpg',
+          'nobel/7.jpg',
+          'nobel/8.jpg',
+          'nobel/9.jpg',
+        ]"
+      />
+    </AppSection>
+    <AppSection name="Kompetens" class="mt-8 sm:mt-0">
+      <p>
+        Vi på TE4 är specialiserade inom JavaScript ES6 och duktiga inom HTML5
+        och CSS3. Utöver de språken använder vi ramverket Vue 3 för att
+        underlätta arbetsprocessen och förbättra kodstrukturen. Vanliga verktyg
+        vi använder är Node.js, Visual Studio Code, Git och Github. Utbildningen
+        har dessutom förbättrat vår förmåga att anpassa oss till kunder. Vi
+        uppskattar att involvera kunder i vår produktutveckling och kommunicera
+        för att nå bättre resultat kring slutprodukten.
+        <br /><br />Tekniker vi använder:
+      </p>
+      <ul class="ml-4 text-white list-disc">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript ES6</li>
+        <li>Vue 3</li>
+        <li>Tailwind CSS</li>
+        <li>Pinia</li>
+        <li>Axios</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>Passport.js</li>
+        <li>MongoDB</li>
+        <li>Bcrypt</li>
+        <li>Git</li>
+        <li>Figma</li>
+      </ul>
+    </AppSection>
     <AppSection name="Hur vi arbetar">
       <p>
         Med tydliga mål och riktlinjer kan vi planera noggrant och sedan arbeta
