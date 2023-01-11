@@ -18,7 +18,6 @@ import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
       >SP-AICE</RouterLink
     ></AppHeader
   >
-  <main>
   <main class="flex-grow">
     <AppSectionTitle name="Team" />
     <div
@@ -27,14 +26,14 @@ import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
       <profileCard
         memberName="Axel"
         description="Musik är något Axel tycker förgyller livet. Dela gärna med dig vilken musik du gillar och om du själv spelar något instrument."
-        :imageName="`${axelPicture}`"
+        imageName="members/Axel2.jpg"
         imageAlt="Picture of member Axel"
         githubLink="https://github.com/axelhagerback"
       />
       <profileCard
         memberName="Isac"
         description="Om du börjar prata  träning med Isac kommer du inte bli av med honom på ett tag"
-        :imageName="`${isacPicture}`"
+        imageName="members/Isac1.jpg"
         imageAlt="Picture of member Isac"
         summary="Hej hej jag heter Isac"
         githubLink="https://github.com/isacchr"
@@ -42,14 +41,14 @@ import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
       <profileCard
         memberName="Casper"
         description="Casper är norsk, han är dansk, han är lite allt möjligt. Precis som hans intressen och ämnen att diskutera."
-        :imageName="`${casperPicture}`"
+        imageName="members/Casper2.jpg"
         imageAlt="Picture of member Casper"
         githubLink="https://github.com/CasperHogstrom"
       />
       <profileCard
         memberName="Elliot"
         description="En bra arbetsplats kan variera för Elliot, antingen kontor eller vid hans hund Milo."
-        :imageName="`${elliotPicture}`"
+        imageName="members/Elliot2.jpg"
         imageAlt="Picture of member Elliot"
         githubLink="https://github.com/elliotabrahamsson"
       />
