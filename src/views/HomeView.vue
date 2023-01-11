@@ -12,15 +12,12 @@ import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
 
     <AppSection>
       <p>
-        Vi studerar vid Östra Gymnasiet och läser just nu utbildningen TE4.
-        Detta är ett fjärde år teknik med fokus inom ininformationsteknik, med
-        utgång i mjukvarudesign samt då en åtskild kurs inom entréprenörskap.
-        Kurserna är i stora drag inriktade mot programmering. Vad som gäller
-        praktik arbetar vi oftast i två olika teams. Generellt för hela TE4 är
-        att vi lär oss att arbeta agilt tillsammans med andra och jobbar
-        ständigt med att planera och effektivisera vår tid. Vi är även
-        transparenta och diskuterar ofta med varandra samt med kunder och
-        projektledare för att minska risken för missförstånd.
+        TE4 är en utbildning där vi lär oss om programmering med fokus inom
+        informationsteknik med utgång inom mjukvarudesign samt entréprenörskap.
+        Med tydliga mål och riktlinjer från kunden tar vi oss framåt i arbetet
+        självständigt. Vi är angelägna om att utvecklas och är inte rädda för
+        utmaningar. TE4 består av två individuella team om fyra, Wood-Ridge och
+        SP-AICE, som arbetar enskilt men kan jobba tillsammans.
       </p></AppSection
     >
     <div class="sm:flex sm:space-x-16">

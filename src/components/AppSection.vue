@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <section class="border-white border-2 rounded-lg p-4">
+  <section class="shadow-xl bg-slate-700 rounded-lg p-4">
     <AppSectionTitle :name="name" />
     <slot />
   </section>
