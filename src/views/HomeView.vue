@@ -6,6 +6,7 @@ import WoodRidgeIcon from "../components/wood-ridge/icons/WoodRidgeIcon.vue";
 import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import { ChevronUpIcon } from "@heroicons/vue/20/solid";
+import SpaiceIcon from "../components/icons/SpaiceIcon.vue";
 </script>
 
 <template>
@@ -111,7 +112,7 @@ import { ChevronUpIcon } from "@heroicons/vue/20/solid";
 
         <div class="bg-slate-500 hover:bg-slate-400 rounded-lg p-2 mx-2 mt-2">
           <RouterLink to="/sp-aice" class="flex items-center text-2xl">
-            <WoodRidgeIcon class="mr-2" />SP-AICE</RouterLink
+            <SpaiceIcon class="mr-2" />SP-AICE</RouterLink
           >
         </div>
       </div>

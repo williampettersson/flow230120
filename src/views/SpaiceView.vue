@@ -4,14 +4,15 @@ import AppSectionTitle from "../components/AppSectionTitle.vue";
 import profileCard from "../components/sp-aice/profileCard.vue";
 import { RouterLink } from "vue-router";
 import ProjectCards from "../components/sp-aice/ProjectCards.vue";
+import SpaiceIcon from "../components/icons/SpaiceIcon.vue";
 </script>
 
 <template>
   <AppHeader class="flex-grow-0 flex-shrink-0"
-    ><RouterLink
-      to="/sp-aice"
-      class="p-2 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap"
-      >SP-AICE</RouterLink
+    ><div
+     
+      class="p-2 bg-neutral-900 bg-opacity-75 rounded-lg shadow whitespace-nowrap flex gap-2"
+      ><SpaiceIcon/> SP-AICE </div
     ></AppHeader
   >
   <main class="flex-grow">
