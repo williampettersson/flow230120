@@ -7,6 +7,7 @@ import ProjectCard from "../components/wood-ridge/ProjectCard.vue";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import { ChevronUpIcon } from "@heroicons/vue/20/solid";
 import SpaiceIcon from "../components/icons/SpaiceIcon.vue";
+import DisclosureComponent from "../components/DisclosureComponent.vue";
 </script>
 
 <template>
@@ -68,22 +69,65 @@ import SpaiceIcon from "../components/icons/SpaiceIcon.vue";
           />
         </DisclosureButton>
         <DisclosurePanel class="px-4 pt-4 pb-2 text-sm">
-          <ul class="ml-4 text-white list-disc">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript ES6</li>
-            <li>Vue 3</li>
-            <li>Tailwind CSS</li>
-            <li>Pinia</li>
-            <li>Axios</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>Passport.js</li>
-            <li>MongoDB</li>
-            <li>Bcrypt</li>
-            <li>Git</li>
-            <li>Figma</li>
-          </ul>
+          <DisclosureComponent
+            title="HTML5"
+            description="Hyper Text Markup Language 5 används för att skapa strukturen för en webbapplikation."
+          />
+          <DisclosureComponent
+            title="CSS3"
+            description="Cascading Style Sheet 3 används för att anpassa gränssnitt till applikationen."
+          />
+          <DisclosureComponent
+            title="JavaScript ES6"
+            description="JavaScript är det programeringsspråk vi huvudsakligen använder."
+          />
+          <DisclosureComponent
+            title="Vue3"
+            description="Vue används för att skapa användargränssnitt för webbapplikationer och bygger på HTML, CSS och JavaScript.
+            Vue är komponentbaserat, lätt att komma igång med och lära sig tack vare den omfattande dokumentationen."
+          />
+          <DisclosureComponent
+            title="TailwindCSS"
+            description="Tailwind är ett CSS ramverk som används för att underlätta appliceringen av olika stilar genom att sätta färdiga klasser på HTML element."
+          />
+          <DisclosureComponent
+            title="Pinia"
+            description="Pinia är ett “store bibliotek” för vue. Det används för att dela ett tillstånd mellan t.ex. komponenter."
+          />
+          <DisclosureComponent
+            title="Axios"
+            description="Axios förenklar processen att göra “requests” och ta emot “responses”."
+          />
+          <DisclosureComponent
+            title="Node.js"
+            description="Node är en exekveringsmiljö för JavaScript."
+          />
+          <DisclosureComponent
+            title="Express.js"
+            description="Express är ett ramverk för Node som har många funktioner för att bygga webbapplikationer som hantera servrar och routes."
+          />
+          <DisclosureComponent
+            title="Passport.js"
+            description="Passport är ett mellanprogram för Node som hanterar autentisering.
+            Det kan även användas i vilken Expressbaserad webbapplikation som helst.
+            Passport stödjer autentisering med användarnamn och lösenord, Google, Facebook med flera."
+          />
+          <DisclosureComponent
+            title="MongoDB"
+            description="MongoDB är ett databasprogram som främst är dokument orienterat."
+          />
+          <DisclosureComponent
+            title="Bcrypt"
+            description="Detta verktyg används för att kryptera lösenord."
+          />
+          <DisclosureComponent
+            title="Git"
+            description="Git är ett versionshanteringsprogram som är Open Source skapat för att hantera allt från stora till små projekt."
+          />
+          <DisclosureComponent
+            title="Figma"
+            description="Designverktyg vi ofta använder i planeringsfasen i början av våra projekt. Vi skapar då skisser, prototyper samt testar olika designs och färgteman som kan passa produkten."
+          />
         </DisclosurePanel>
       </Disclosure>
     </AppSection>
