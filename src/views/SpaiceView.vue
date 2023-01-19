@@ -60,6 +60,12 @@ import SpaiceIcon from "../components/icons/SpaiceIcon.vue";
           description="Mind Dump är en webbapplikation
     som man kan skapa anteckningar för sina behov. Den erbjuder funktioner som att
     ta bort och redigera nuvarande anteckningar."
+        images="[
+        'mind_dump/Mind_dump1.jpg'
+        'mind_dump/Mind_dump2.jpg'
+        'mind_dump/Mind_Dump3.jpg'
+        'mind_dump/Mind_Dump4.jpg'
+        ]"
         />
       </div>
     </section>
