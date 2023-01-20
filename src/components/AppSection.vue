@@ -1,12 +1,13 @@
-<script setup>
-import AppSectionTitle from "./AppSectionTitle.vue";
-</script>
-
 <script>
+import AppSectionTitle from "./AppSectionTitle.vue";
+
 export default {
   props: {
     name: String,
   },
+  components: {
+    AppSectionTitle,
+  }
 };
 </script>
 
